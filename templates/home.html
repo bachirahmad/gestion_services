@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Dashboard{% endblock %}</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons (optional) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- Custom CSS (if you want to add your own styles) -->
+    
+</head>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://baobab.com/sn/wp-content/uploads/sites/20/2023/04/Baobab_Logo_RGB_Rubine.png" alt="Logo" style="height: 40px;">
+                Systeme Khadija
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <div class="container">
+        {% block content %}
+<!-- Main Container -->
+<div class="container my-5">
+    <h1 class="text-center mb-5 display-4">Global Finance System</h1>
+    
+    <!-- Row for the widgets -->
+    <div class="row g-4">
+        <!-- Widget 1: Reporting BCEAO -->
+        <div class="col-md-4">
+            <a href="#" class="text-decoration-none">
+                <div class="card shadow-sm h-100 text-center">
+                    <div class="card-body">
+                        <i class="bi bi-bar-chart-line-fill text-primary mb-3" style="font-size: 3rem;"></i>
+                        <h5 class="card-title">Reporting BCEAO</h5>
+                        <p class="card-text">Accédez aux rapports et analyses BCEAO.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Widget 2: Outil Budget Holding -->
+        <div class="col-md-4">
+            <a href="#" class="text-decoration-none">
+                <div class="card shadow-sm h-100 text-center">
+                    <div class="card-body">
+                        <i class="bi bi-wallet text-success mb-3" style="font-size: 3rem;"></i>
+                        <h5 class="card-title">Outil Budget Holding</h5>
+                        <p class="card-text">Gérez votre budget avec efficacité.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Widget 3: Outil Fin Conso (LLP & Cost) -->
+        <div class="col-md-4">
+            <a href="#" class="text-decoration-none">
+                <div class="card shadow-sm h-100 text-center">
+                    <div class="card-body">
+                        <i class="bi bi-cash text-warning mb-3" style="font-size: 3rem;"></i>
+                        <h5 class="card-title">Cost Control</h5>
+                        <p class="card-text">Analyse des coûts et consommation.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Widget 4: Analyse Forecast ML -->
+        <div class="col-md-4">
+            <a href="#" class="text-decoration-none">
+                <div class="card shadow-sm h-100 text-center">
+                    <div class="card-body">
+                        <i class="bi bi-graph-up-arrow text-danger mb-3" style="font-size: 3rem;"></i>
+                        <h5 class="card-title">Analyse Forecast ML</h5>
+                        <p class="card-text">Prévisions basées sur des modèles de ML.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        
+
+        <!-- Widget 5: Outil Reconciliation -->
+        <div class="col-md-4">
+            <a href="#" class="text-decoration-none">
+                <div class="card shadow-sm h-100 text-center">
+                    <div class="card-body">
+                        <i class="bi bi-arrow-left-right text-info mb-3" style="font-size: 3rem;"></i>
+                        <h5 class="card-title">Outil Reconciliation</h5>
+                        <p class="card-text">Outil de réconciliation efficace.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Widget 6: Visualisation PowerBI -->
+        <div class="col-md-4">
+            <a href="#" class="text-decoration-none">
+                <div class="card shadow-sm h-100 text-center">
+                    <div class="card-body">
+                        <i class="bi bi-bar-chart-fill text-secondary mb-3" style="font-size: 3rem;"></i>
+                        <h5 class="card-title">Visualisation PowerBI</h5>
+                        <p class="card-text">Visualisations interactives avec PowerBI.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Widget 7: Analyse ACP -->
+        <div class="col-md-4">
+            <a href="#" class="text-decoration-none">
+                <div class="card shadow-sm h-100 text-center">
+                    <div class="card-body">
+                        <i class="bi bi-pie-chart-fill text-dark mb-3" style="font-size: 3rem;"></i>
+                        <h5 class="card-title">Analyse ACP</h5>
+                        <p class="card-text">Analyse des coûts et performance.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Widget 8: Outil CMD -->
+        <div class="col-md-4">
+            <a href="#" class="text-decoration-none">
+                <div class="card shadow-sm h-100 text-center">
+                    <div class="card-body">
+                        <i class="bi bi-clipboard-check text-primary mb-3" style="font-size: 3rem;"></i>
+                        <h5 class="card-title">Outil CMD</h5>
+                        <p class="card-text">Gestion des commandes et des livraisons.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Widget 9: Branch Profitability -->
+        <div class="col-md-4">
+            <a href="#" class="text-decoration-none">
+                <div class="card shadow-sm h-100 text-center">
+                    <div class="card-body">
+                        <i class="bi bi-people-fill text-success mb-3" style="font-size: 3rem;"></i>
+                        <h5 class="card-title">Branch Profitability</h5>
+                        <p class="card-text">Analyse de la rentabilité par agence.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Widget 10: Tréso -->
+        <div class="col-md-4">
+            <a href="#" class="text-decoration-none">
+                <div class="card shadow-sm h-100 text-center">
+                    <div class="card-body">
+                        <i class="bi bi-cash-stack text-danger mb-3" style="font-size: 3rem;"></i>
+                        <h5 class="card-title">Cash Management</h5>
+                        <p class="card-text">Suivi cash.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Widget 11: Reporting Investisseur -->
+        <div class="col-md-4">
+            <a href="#" class="text-decoration-none">
+                <div class="card shadow-sm h-100 text-center">
+                    <div class="card-body">
+                        <i class="bi bi-person-lines-fill text-primary mb-3" style="font-size: 3rem;"></i>
+                        <h5 class="card-title">Reporting Investisseur</h5>
+                        <p class="card-text">Accédez aux rapports pour investisseurs.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Widget 4: Reporting Mensuel -->
+        <div class="col-md-4">
+            <a href="#" class="text-decoration-none">
+                <div class="card shadow-sm h-100 text-center">
+                    <div class="card-body">
+                        <i class="bi bi-graph-up-arrow text-danger mb-3" style="font-size: 3rem;"></i>
+                        <h5 class="card-title">Reporting Mensuel</h5>
+                        <p class="card-text">Analyse des reportings mensuels.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="#" class="text-decoration-none">
+                <div class="card shadow-sm h-100 text-center">
+                    <div class="card-body">
+                        <!-- LLP Calculation icon -->
+                        <i class="bi bi-calculator text-primary mb-3" style="font-size: 3rem;"></i>
+                        <h5 class="card-title">LLP Calculation</h5>
+                        <p class="card-text">Calcul et Analyse des Provisions.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        <div class="col-md-4">
+            <a href="#" class="text-decoration-none">
+                <div class="card shadow-sm h-100 text-center">
+                    <div class="card-body">
+                        <!-- Etalement des Commissions icon -->
+                        <i class="bi bi-bar-chart-line text-success mb-3" style="font-size: 3rem;"></i>
+                        <h5 class="card-title">Etalement des Commissions</h5>
+                        <p class="card-text">Etalement des commissions</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        <div class="col-md-4">
+            <a href="#" class="text-decoration-none">
+                <div class="card shadow-sm h-100 text-center">
+                    <div class="card-body">
+                        <!-- Assurances icon -->
+                        <i class="bi bi-shield-check text-warning mb-3" style="font-size: 3rem;"></i>
+                        <h5 class="card-title">Assurances</h5>
+                        <p class="card-text">Calcul des primes des assurances</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        <div class="col-md-4">
+            <a href="#" class="text-decoration-none">
+                <div class="card shadow-sm h-100 text-center">
+                    <div class="card-body">
+                        <!-- Fleet Management System icon -->
+                        <i class="bi bi-truck text-danger mb-3" style="font-size: 3rem;"></i>
+                        <h5 class="card-title">Fleet Management System</h5>
+                        <p class="card-text">Gestion du parc automobiles</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+    </div>
+</div>
+{% endblock %}
+    </div>
+    <!-- Footer -->
+    <footer class="bg-light text-center mt-auto py-3">
+        <div class="container">
+            <p class="text-muted">© 2024 Systeme Khadija. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (required for some Bootstrap components) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
